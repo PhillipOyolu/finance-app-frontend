@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# 📘 Finance App — Backend + Frontend (Work in Progress)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full‑stack personal finance tracking application built as a portfolio project to demonstrate real‑world engineering skills, including API design, database modelling, frontend UI development, and modern tooling.
 
-Currently, two official plugins are available:
+This project is actively being developed — follow the journey as new features roll out.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎓 Purpose of This Project
+This project is part of my journey to becoming a full‑stack developer.  
+It demonstrates backend engineering, API design, frontend UI development, and real‑world problem solving.  
+I’m building it publicly to show consistent progress and growth.
 
-## React Compiler
+## 🚀 Tech Stack
+Frontend:
+React + TypeScript
+Vite
+Tailwind CSS v4
+React Router
+Axios
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Backend:
+FastAPI
+SQLAlchemy
+SQLite (dev)
+Pydantic
+Python 3.12+
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
+Code
+finance-app-frontend/
+  src/
+    pages/
+      Login.tsx
+    services/
+      api.ts
+    styles/
+      global.css
+    router.tsx
+    App.tsx
+    main.tsx
+  tailwind.config.js
+  postcss.config.js
+  package.json
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Current Features (as of June 2026)
+Frontend:
+Tailwind CSS v4 fully configured
+PostCSS pipeline fixed and working
+React Router installed and configured
+Clean project structure
+Login page UI built with Tailwind
+Global styling + layout foundation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Backend:
+FastAPI server running
+Expense endpoints working
+Database models created
+Category‑based analytics implemented
+Summary endpoint upgraded
+Backend fully connected to frontend
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Setup Instructions
+Frontend:
+bash
+cd finance-app-frontend
+npm install
+npm run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Backend:
+bash
+cd finance-app-backend
+uvicorn main:app --reload
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📅 Latest Updates (June 2026)
+Added Tailwind v4 + PostCSS plugin
+Fixed Vite CSS pipeline
+Added React Router
+Created Login page UI
+Cleaned up App.tsx
+Pushed first frontend milestone to GitHub
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🎯 Next Steps
+Build dashboard layout
+Add sidebar + top navigation
+Create expenses page
+Create income page
+Add analytics charts
+Implement authentication
+Polish UI and component structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📣 Follow the Journey
+This project is being built publicly.
+Progress updates will be posted on LinkedIn as new features ship.
+
+## 📬 Contact
+Phillip Oyolu  
+Junior Developer
+GitHub: https://github.com/PhillipOyolu  
+LinkedIn: https://www.linkedin.com/in/phillipoyolu/
